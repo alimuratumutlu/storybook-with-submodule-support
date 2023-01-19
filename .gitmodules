@@ -1,0 +1,3 @@
+[submodule "src/components/shared"]
+	path = src/components/shared
+	url = https://github.com/muum/global-component-library

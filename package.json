@@ -1,5 +1,4 @@
 {
-	"homepage": "http://muum.github.io/storybook-for-component-library",
 	"name": "storybook-mui-example",
 	"version": "0.1.0",
 	"private": true,
@@ -22,9 +21,7 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"storybook": "start-storybook -p 6006 -s public",
-		"build-storybook": "build-storybook -s public",
-		"predeploy": "npm run build-storybook",
-		"deploy-storybook": "gh-pages -d storybook-static"
+		"build-storybook": "build-storybook -s public"
 	},
 	"eslintConfig": {
 		"extends": [
