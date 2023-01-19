@@ -1,77 +1,81 @@
 {
-  "name": "storybook-mui-example",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.10.4",
-    "@emotion/styled": "^11.10.4",
-    "@fontsource/material-icons": "^4.5.4",
-    "@fontsource/roboto": "^4.5.8",
-    "@mui/icons-material": "^5.10.6",
-    "@mui/lab": "^5.0.0-alpha.116",
-    "@mui/material": "^5.10.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "**/*.stories.*"
-        ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
-      }
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@storybook/addon-actions": "^6.5.12",
-    "@storybook/addon-essentials": "^6.5.12",
-    "@storybook/addon-interactions": "^6.5.12",
-    "@storybook/addon-links": "^6.5.12",
-    "@storybook/builder-webpack5": "^6.5.12",
-    "@storybook/manager-webpack5": "^6.5.12",
-    "@storybook/node-logger": "^6.5.12",
-    "@storybook/preset-create-react-app": "^4.1.2",
-    "@storybook/react": "^6.5.12",
-    "@storybook/testing-library": "^0.0.13",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^29.1.0",
-    "@types/node": "^18.7.23",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
-    "babel-plugin-named-exports-order": "^0.0.2",
-    "prop-types": "^15.8.1",
-    "typescript": "^4.8.4",
-    "webpack": "^5.74.0"
-  }
+	"homepage": "http://muum.github.io/storybook-for-component-library",
+	"name": "storybook-mui-example",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@emotion/react": "^11.10.4",
+		"@emotion/styled": "^11.10.4",
+		"@fontsource/material-icons": "^4.5.4",
+		"@fontsource/roboto": "^4.5.8",
+		"@mui/icons-material": "^5.10.6",
+		"@mui/lab": "^5.0.0-alpha.116",
+		"@mui/material": "^5.10.5",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-scripts": "5.0.1",
+		"web-vitals": "^2.1.4"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"storybook": "start-storybook -p 6006 -s public",
+		"build-storybook": "build-storybook -s public",
+		"predeploy": "npm run build-storybook",
+		"deploy-storybook": "gh-pages -d storybook-static"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		],
+		"overrides": [
+			{
+				"files": [
+					"**/*.stories.*"
+				],
+				"rules": {
+					"import/no-anonymous-default-export": "off"
+				}
+			}
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@storybook/addon-actions": "^6.5.12",
+		"@storybook/addon-essentials": "^6.5.12",
+		"@storybook/addon-interactions": "^6.5.12",
+		"@storybook/addon-links": "^6.5.12",
+		"@storybook/builder-webpack5": "^6.5.12",
+		"@storybook/manager-webpack5": "^6.5.12",
+		"@storybook/node-logger": "^6.5.12",
+		"@storybook/preset-create-react-app": "^4.1.2",
+		"@storybook/react": "^6.5.12",
+		"@storybook/testing-library": "^0.0.13",
+		"@testing-library/jest-dom": "^5.16.5",
+		"@testing-library/react": "^13.4.0",
+		"@testing-library/user-event": "^13.5.0",
+		"@types/jest": "^29.1.0",
+		"@types/node": "^18.7.23",
+		"@types/react": "^18.0.21",
+		"@types/react-dom": "^18.0.6",
+		"babel-plugin-named-exports-order": "^0.0.2",
+		"gh-pages": "^4.0.0",
+		"prop-types": "^15.8.1",
+		"typescript": "^4.8.4",
+		"webpack": "^5.74.0"
+	}
 }
